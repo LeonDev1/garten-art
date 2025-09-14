@@ -1,0 +1,94 @@
+#why-gartenart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100dvh;
+  width: 100%;
+
+  background-color: var(--background-color);
+}
+
+/* .cards {
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 35px 35px 35px;
+  gap: 1em;
+  grid-template-areas:
+    "card-1"
+    "card-2"
+    "card-3";
+}
+
+.why-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background-color: var(--secondary-color);
+
+  
+} */
+
+.cards {
+  display: grid;
+  grid-template-areas:
+    "card-1 description"
+    "card-2 description"
+    "card-3 img";
+  grid-template-columns: repeat(2, 290px);
+  grid-template-rows: repeat(3, 160px);
+  gap: 10vw;
+  row-gap: 20px;
+
+  height: 80dvh;
+  margin: auto;
+
+  /* background-color: aqua; */
+}
+
+.cards * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.cards > * {
+  /* https://smoothshadows.com/#djEsMyw1LDAuMDgsMjcsMCwwLCMwMzA3MTIsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+  box-shadow: 0px 0px 1px rgba(3, 7, 18, 0.08), 0px 0px 4px rgba(3, 7, 18, 0.08),
+    0px 0px 10px rgba(3, 7, 18, 0.08), 0px 0px 17px rgba(3, 7, 18, 0.08),
+    0px 0px 27px rgba(3, 7, 18, 0.08);
+
+  transition: all 300ms ease;
+}
+
+.cards > *:hover {
+  /* https://smoothshadows.com/#djEsMyw1LDAuMTEsMjcsMCwwLCMwMzA3MTIsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+  box-shadow: 0px 0px 1px rgba(3, 7, 18, 0.11), 0px 0px 4px rgba(3, 7, 18, 0.11),
+    0px 0px 10px rgba(3, 7, 18, 0.11), 0px 0px 17px rgba(3, 7, 18, 0.11),
+    0px 0px 27px rgba(3, 7, 18, 0.11);
+}
+
+.why-card {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
+.why-description {
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+}
+
+.why-image {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  object-fit: cover;
+}
