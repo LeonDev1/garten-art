@@ -1,0 +1,55 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 40px 0 50px 0;
+  background: var(--background-color);
+}
+
+#contact * {
+  margin: 0;
+}
+
+#contact p {
+  opacity: 1;
+  animation: none;
+  font-weight: 450;
+  font-size: 25px;
+  text-align: center;
+}
+
+#contact p:nth-child(1) {
+  font-weight: 600;
+}
+
+#contact p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#contact a {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 470;
+  transition: all 300ms ease;
+}
+
+#contact #watermark a::after {
+  opacity: 0;
+}
+
+#watermark {
+  position: absolute;
+  bottom: 1.5dvh;
+}
+
+#contact .small-text {
+  font-size: 15px;
+  font-weight: 350;
+}

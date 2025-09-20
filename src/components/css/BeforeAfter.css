@@ -1,0 +1,24 @@
+#before-after {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-bottom: 5dvh;
+  background-color: var(--background-color);
+}
+
+.slider {
+  width: 80%;
+  max-width: 800px;
+  height: 50dvh;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+#slider-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
