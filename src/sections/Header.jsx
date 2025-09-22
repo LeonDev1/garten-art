@@ -63,7 +63,9 @@ function Header() {
             alt="Gartenbild"
           />
         </div>
-        <Button className="header-button">Unsere Gärten entdecken</Button>
+        <Button link={"#our-services"} className="header-button">
+          Unsere Gärten entdecken
+        </Button>
       </motion.div>
     </section>
   );

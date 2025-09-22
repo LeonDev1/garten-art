@@ -1,7 +1,8 @@
+import { a } from "framer-motion/client";
 import "./css/Button.css";
 import { motion } from "framer-motion";
 
-function Button({ children, className }) {
+function Button({ children, className, link }) {
   const popIn = {
     initial: { opacity: 0, scale: 0.9 },
     whileInView: { opacity: 1, scale: 1 },
@@ -12,12 +13,14 @@ function Button({ children, className }) {
     },
   };
   return (
-    <motion.button
-      {...popIn}
-      className={`common-button${className ? " " + className : ""}`}
-    >
-      <p className="common-button-text">{children}</p>
-    </motion.button>
+    <a className="common-button-a" href={link}>
+      <motion.button
+        {...popIn}
+        className={`common-button${className ? " " + className : ""}`}
+      >
+        <p className="common-button-text">{children}</p>
+      </motion.button>
+    </a>
   );
 }
 
